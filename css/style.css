@@ -168,6 +168,13 @@ main .content #item .item-text dl dt {
 main .content #item .item-text dl dd {
   width: 70%;
 }
+main .content #about {
+  max-width: 600px;
+}
+main .content #about p {
+  line-height: 1.9;
+  margin-bottom: 30px;
+}
 main .lineup {
   display: flex;
   flex-wrap: wrap;

@@ -189,6 +189,15 @@ main {
                 }
             }
         }
+
+        #about {
+            max-width: 600px;
+            
+            p {
+                line-height: 1.9;
+                margin-bottom: 30px;
+            }
+        }
     }
 
     .lineup {
@@ -225,6 +234,7 @@ main {
             padding: 0 20px;
         };
     }
+
 }
 
 /********************
