@@ -1,8 +1,21 @@
 /********************
 entire
 ********************/
+body {
+  color: #333;
+  position: relative;
+  font-size: 0.875rem;
+  min-width: 100vh;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+
 img {
-  aspect-ratio: 16/9;
+  aspect-ratio: 1/1;
 }
 
 .wrapper {
@@ -50,6 +63,21 @@ header
 #header .humburger span:nth-child(2) {
   bottom: 10px;
 }
+#header #navi {
+  position: fixed;
+  top: 0;
+  left: -300px;
+  width: 300px;
+  color: #fff;
+  padding: 36px 50px;
+  transition: all 0.5s;
+  z-index: 20;
+  opacity: 0;
+}
+#header .mask {
+  display: none;
+  transition: all 0.5s;
+}
 
 /********************
 main
@@ -57,4 +85,47 @@ main
 main #top {
   padding-top: 80px;
   padding-bottom: 160px;
+}
+main .lineup {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+main .lineup li {
+  width: 23%;
+  margin-bottom: 40px;
+}
+main .lineup li img {
+  width: 100%;
+  margin-bottom: 10px;
+  vertical-align: top;
+}
+main .lineup li h4 {
+  font-size: 0.75rem;
+}
+main .viewmore {
+  display: block;
+  text-align: center;
+}
+
+/********************
+footer
+********************/
+footer {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+}
+footer #sns {
+  display: flex;
+}
+footer #sns li {
+  font-size: 0.75rem;
+  margin-right: 30px;
+}
+footer p {
+  font-size: 0.625rem;
 }/*# sourceMappingURL=style.css.map */

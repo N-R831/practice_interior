@@ -2,8 +2,21 @@
 entire
 ********************/
 
+body {
+    color: #333;
+    position: relative;
+    font-size: 0.875rem;
+    min-width: 100vh;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+
 img {
-    aspect-ratio: 16 / 9;
+    aspect-ratio: 1 / 1;
 }
 
 .wrapper {
@@ -53,6 +66,23 @@ header
             bottom: 10px;
         }
     }
+
+    #navi {
+        position: fixed;
+        top: 0;
+        left: -300px;
+        width: 300px;
+        color: #fff;
+        padding: 36px 50px;
+        transition: all 0.5s;
+        z-index: 20;
+        opacity: 0;
+    }
+
+    .mask {
+        display: none;
+        transition: all 0.5s;
+    }
 }
 
 /********************
@@ -62,5 +92,58 @@ main {
     #top {
         padding-top: 80px;
         padding-bottom: 160px;
+    }
+
+    .lineup {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        li {
+            width: 23%;
+            margin-bottom: 40px;
+
+            img {
+                width: 100%;
+                margin-bottom: 10px;
+                vertical-align: top;
+            }
+
+            h4 {
+                font-size: 0.75rem;
+            }
+        }
+    }
+
+    .viewmore {
+        display: block;
+        text-align: center;
+    }
+}
+
+/********************
+footer
+********************/
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+
+    #sns {
+        display: flex;
+
+        li {
+            font-size: 0.75rem;
+            margin-right: 30px;
+        }
+
+    }
+    
+    p {
+        font-size: 0.625rem;
     }
 }
