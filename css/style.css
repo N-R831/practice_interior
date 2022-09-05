@@ -175,13 +175,38 @@ main .content #about p {
   line-height: 1.9;
   margin-bottom: 30px;
 }
-main .lineup {
+main .content #company {
+  max-width: 600px;
+}
+main .content #company dl {
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+main .content #company dl dt {
+  width: 30%;
+  border-bottom: solid 1px #dcdbdb;
+  padding: 20px 10px;
+}
+main .content #company dl dd {
+  width: 70%;
+  border-bottom: solid 1px #dcdbdb;
+  padding: 20px 10px;
+}
+main .content #company .map {
+  filter: grayscale(1);
+}
+main .content #company .map iframe {
+  width: 100%;
+  height: 300px;
+  border: 0;
+}
+main .lineup {
+  display: grid;
+  grid-template-columns: 23% 23% 23% 23%;
   justify-content: space-between;
 }
 main .lineup li {
-  width: 23%;
   margin-bottom: 40px;
 }
 main .lineup li img {
