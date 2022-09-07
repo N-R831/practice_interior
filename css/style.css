@@ -3,9 +3,9 @@ entire
 ********************/
 body {
   color: #333;
-  position: relative;
   font-size: 0.875rem;
-  min-width: 100vh;
+  min-height: 100vh;
+  position: relative;
 }
 
 a {
@@ -24,6 +24,10 @@ img {
   max-width: 1360px;
   margin: 0 auto;
   padding: 0 40px;
+}
+
+dt {
+  font-weight: normal;
 }
 
 /********************
@@ -232,7 +236,7 @@ main .pagination li {
 /********************
 footer
 ********************/
-footer {
+#footer {
   display: flex;
   justify-content: space-between;
   position: absolute;
@@ -240,14 +244,14 @@ footer {
   left: 0;
   right: 0;
 }
-footer #sns {
+#footer #sns {
   display: flex;
 }
-footer #sns li {
+#footer #sns li {
   font-size: 0.75rem;
   margin-right: 30px;
 }
-footer p {
+#footer p {
   font-size: 0.625rem;
 }
 
@@ -270,5 +274,23 @@ responsive
   }
   main .lineup {
     grid-template-columns: 47% 47%;
+  }
+  main .content #company dl {
+    flex-direction: column;
+  }
+  main .content #company dl dt {
+    width: 100%;
+    border-bottom: none;
+    padding-bottom: 5px;
+  }
+  main .content #company dl dd {
+    width: 100%;
+    padding-top: 5px;
+  }
+  #footer {
+    flex-direction: column;
+  }
+  #footer #sns {
+    margin-bottom: 5px;
   }
 }/*# sourceMappingURL=style.css.map */
